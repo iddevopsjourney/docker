@@ -1,4 +1,4 @@
-# Setup Lab Docker - VirtualBox
+# Setup Lab Docker - VirtualBox - OS Linux Ubuntu 20.04 Focal Fossa
 Flow untuk setup lab docker adalah sebagai berikut :
 <p><img src="https://github.com/iddevopsjourney/docker/blob/master/001-Setup_Lab/01-Ubuntu_20.04_Focal-Fossa/images/SetupLabDocker-VirtualBox.png"></p></br>
 
