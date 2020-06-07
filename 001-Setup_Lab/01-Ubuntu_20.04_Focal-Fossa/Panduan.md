@@ -12,14 +12,14 @@ Tools pendukung dapat diperoleh di :
 - VirtualBox : https://www.virtualbox.org/
 - Image Linux Ubuntu 20.04 Focal Fossa : https://www.osboxes.org/ubuntu/
 
-### VirtualBox setup
+### 1. VirtualBox setup
 Konfigurasi spesifikasi VM di virtualbox :
 - CPU : 2 Core
 - RAM : 16 GB
 - DISK : 10 GB
 - Network : Bridge
 
-### Konfigurasi Linux Ubuntu 20.04 Focal Fossa
+### 2. Konfigurasi Linux Ubuntu 20.04 Focal Fossa
 Saat first start linux pertama kali dilakukan konfigurasi :
 1. Update OS Linux
 ```script
@@ -66,8 +66,8 @@ $ sudo apt-get install ssh
 $ sudo systemctl enable --now ssh
 $ sudo systemctl status ssh
 ```
-### Snapshoot
+### 3. Snapshoot
 Snapshoot pada stage ini agar mempermudah proses roolback dan vm dapat digunakan untuk lab yang berbeda - beda sesuai kebutuhan.
 
-### Penutup
+### 4. Penutup
 Persiapan lab telah selesai dan siap untuk memulai belajar docker.
