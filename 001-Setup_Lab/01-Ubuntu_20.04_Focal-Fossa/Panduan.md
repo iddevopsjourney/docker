@@ -66,3 +66,8 @@ $ sudo apt-get install ssh
 $ sudo systemctl enable --now ssh
 $ sudo systemctl status ssh
 ```
+### Snapshoot
+Snapshoot pada stage ini agar mempermudah proses roolback dan vm dapat digunakan untuk lab yang berbeda - beda sesuai kebutuhan.
+
+### Penutup
+Persiapan lab telah selesai dan siap untuk memulai belajar docker.
