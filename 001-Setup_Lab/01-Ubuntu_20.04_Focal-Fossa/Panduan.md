@@ -67,7 +67,7 @@ $ sudo systemctl enable --now ssh
 $ sudo systemctl status ssh
 ```
 ### 3. Snapshoot
-Snapshoot pada stage ini agar mempermudah proses roolback dan vm dapat digunakan untuk lab yang berbeda - beda sesuai kebutuhan.
+Snapshoot pada stage ini agar mempermudah proses rollback dan vm dapat digunakan untuk lab yang berbeda - beda sesuai kebutuhan.
 
 ### 4. Penutup
 Persiapan lab telah selesai dan siap untuk memulai belajar docker.
