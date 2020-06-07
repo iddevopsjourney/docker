@@ -12,3 +12,57 @@ Tools pendukung dapat diperoleh di :
 - VirtualBox : https://www.virtualbox.org/
 - Image Linux Ubuntu 20.04 Focal Fossa : https://www.osboxes.org/ubuntu/
 
+### VirtualBox setup
+Konfigurasi spesifikasi VM di virtualbox :
+- CPU : 2 Core
+- RAM : 16 GB
+- DISK : 10 GB
+- Network : Bridge
+
+### Konfigurasi Linux Ubuntu 20.04 Focal Fossa
+Saat first start linux pertama kali dilakukan konfigurasi :
+1. Update OS Linux
+```script
+$ sudo apt update
+$ suo apt upgrade
+```
+2. IP Address di setting menjadi static
+```script
+$ cat /etc/cloud/cloud.cfg.d/subiquity-disable-cloudinit-networking.cfg
+network: {config: disabled}
+$
+
+$ ip add show
+
+// Perubahan konfigurasi dari DHCP ke Stati IP
+$ sudo vi /etc/netplan/00-installer-config.yaml
+# This is the network config written by 'subiquity'
+network:
+  ethernets:
+    enp0s3:
+      dhcp4: true
+  version: 2
+
+// Menjadi
+network:
+  ethernets:
+    enp0s3:
+      addresses: [192.168.1.3/24]
+      gateway4: 192.168.1.1
+      nameservers:
+        addresses: [4.2.2.2, 8.8.8.8]
+  version: 2
+
+// apply konfigurasi 
+$ sudo netplan apply
+
+// Verifikasi konfigurasi
+$ ip add show
+$ ip route show
+```
+3. Konfigurasi Remote SSH
+```script
+$ sudo apt-get install ssh
+$ sudo systemctl enable --now ssh
+$ sudo systemctl status ssh
+```
