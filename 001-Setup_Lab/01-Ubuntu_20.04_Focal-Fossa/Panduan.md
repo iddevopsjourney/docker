@@ -24,7 +24,7 @@ Saat first start linux pertama kali dilakukan konfigurasi :
 1. Update OS Linux
 ```script
 $ sudo apt update
-$ suo apt upgrade
+$ sudo apt upgrade
 ```
 2. IP Address di setting menjadi static
 ```script
